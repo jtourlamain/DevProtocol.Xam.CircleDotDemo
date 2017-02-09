@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using DevProtocol.Xam.CircleDotDemo.Views;
+using Xamarin.Forms;
 
 namespace DevProtocol.Xam.CircleDotDemo
 {

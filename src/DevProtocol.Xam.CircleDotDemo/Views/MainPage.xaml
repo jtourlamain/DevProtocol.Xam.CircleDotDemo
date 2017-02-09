@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:control="clr-namespace:DevProtocol.Xam.CircleDotDemo.Controls;assembly=DevProtocol.Xam.CircleDotDemo"
+		x:Class="DevProtocol.Xam.CircleDotDemo.Views.MainPage">
+	<ContentPage.Content>
+		<Grid VerticalOptions="Center">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="80" />
+				<RowDefinition Height="100" />
+				<RowDefinition Height="40" />
+				<RowDefinition Height="40" />
+			</Grid.RowDefinitions>
+			<Label Text="CirleDot Demo" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+			<StackLayout HorizontalOptions="CenterAndExpand" 
+					VerticalOptions="CenterAndExpand" 
+					HeightRequest="30"
+					Orientation="Horizontal"
+					Grid.Row="1">
+			    <control:CircleDot Active="{Binding IsCircle1Active}" 
+	                          	WidthRequest="30"
+	                          	HeightRequest="30" 
+	                          	FillColor="#D0021B"
+	                          	StrokeColor="#202020" />
+				<control:CircleDot Active="{Binding IsCircle2Active}" 
+	                          	WidthRequest="30"
+	                          	HeightRequest="30" 
+	                          	FillColor="#D0021B"
+	                          	StrokeColor="#202020" />
+				<control:CircleDot Active="{Binding IsCircle3Active}" 
+	                          	WidthRequest="30"
+	                          	HeightRequest="30" 
+	                          	FillColor="#D0021B"
+	                          	StrokeColor="#202020" />
+				<control:CircleDot Active="{Binding IsCircle4Active}" 
+	                          	WidthRequest="30"
+	                          	HeightRequest="30" 
+	                          	FillColor="#D0021B"
+	                          	StrokeColor="#202020" />
+			</StackLayout>
+			<Button Text="Activate Next" Command="{Binding ActivateCircleCommand}" Grid.Row="2" />
+			<Button Text="Desactivate" Command="{Binding DesactivateCircleCommand}" Grid.Row="3" />
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
