@@ -10,7 +10,7 @@ The circle can have a normal state and an active state.
 - Jan Tourlamain
 
 ## More info
-[http://www.devprotocol.com](http://www.devprotocol.com)
+[http://www.devprotocol.com/draw-a-circle-with-a-xamarin-forms-custom-renderer/](http://www.devprotocol.com/draw-a-circle-with-a-xamarin-forms-custom-renderer/)
 
 ## License
 Under MIT (See [LICENSE.md](LICENSE.md))
